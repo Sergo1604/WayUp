@@ -1,0 +1,35 @@
+h1 {
+  color: red;
+  font-weight: 900;
+}
+
+h2 {
+  background-color: green;
+  color: #fff;
+}
+
+.block-text {
+    display:block;
+    background-color: blue;
+    color: #fff;
+    width: 6em;
+    margin-bottom: 7em;
+}
+
+h2.wide {
+  padding: 2em;
+}
+
+.text {
+  color: red;
+}
+
+.list {
+  font-size: 25px;
+  border: solid 1px #000;
+}
+
+form p {
+    margin-left: 6em;
+    
+}

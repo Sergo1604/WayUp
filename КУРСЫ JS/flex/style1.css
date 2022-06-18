@@ -1,0 +1,25 @@
+.tab2 {
+    width: 150px;
+    height: 40px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab3 {
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
