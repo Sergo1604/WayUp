@@ -78,6 +78,7 @@ selectAnswer = () =>
                 selectedAnswer = +el.getAttribute("data-id");
                 isItemSelected = true;
                 responsedQuestions.push(indexOfQuestion);
+                numberOfCurrentQuestion++;
                 if (selectedAnswer == quiz[indexOfQuestion].rightIndex) {
                     option[selectedAnswer].classList.add("correct");
                     //tracker.classList.add('correct');
@@ -127,6 +128,17 @@ quizOver = () => {
     const correctAnswer = document.getElementById('correct-answer');
     const numberOfAllQuestions = document.getElementById('number-of-all-questions-2');
     const btnTryAgain = document.getElementById('btn-try-again');
+    const messageResult = document.getElementById('answer-message');
+    const goodAnswer = 'Хороший рзультат',
+        middleAnswer = 'Удовлетворительно, но стоит поработать над собой',
+        badAnswer = 'Что-то пошло не так. Садись и работай над собой!';
+    
+
+    
+    if (correctQuantity < 3) messageResult.innerHTML = badAnswer;
+    else if (correctQuantity > 4) messageResult.innerHTML = goodAnswer;
+    else messageResult.innerHTML = middleAnswer;
+    //console.log(messageResult.firstChild);
     correctAnswer.innerHTML = correctQuantity;
     numberOfAllQuestions.innerHTML = quiz.length;
     modalWindow.classList.add('active');
