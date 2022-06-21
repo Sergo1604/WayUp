@@ -2,39 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>LESSON3</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Open+Sans&family=Ubuntu:wght@400;700&display=swap"
+    rel="stylesheet">
+  />
+  <title>LESSON3</title>
 </head>
 
 <body>
-    <header>
-        <img src="./img/logo.svg" alt="logo...">
-        <section>
-            <div class="wrapper">
-                <div>
-                    <h1>С помощью верстки я создам ту жизнь, о которой мечтаю!</h1>
-                    <p>Мои стремления+настойчивость позволят мне достичь чего угодно. Я не верю в это. Я знаю это на
-                        100%. Меня не очтановить!</p>
-                        <button class="btn">Двигаться к мечте</button>
-                </div>
-                <div>
-                    <img src="./img/picture.jpg" alt="">
-                </div>
+  <header class="header">
+    <div class="container">
+      <img class="header-logo" src="./img/homework_logo (1).png" alt="logo..." />
+      <div class="wrapper">
+        <div class="dream">
+          <h1>
+            С помощью верстки я создам ту жизнь, о которой
+            <span class="bigger">мечтаю!</span>
+          </h1>
+          <p>
+            Мои стремления + настойчивость позволят мне достичь чего угодно. Я
+            не верю в это. Я знаю это на 100%. Меня не очтановить!
+          </p>
+          <button class="btn">Двигаться к мечте</button>
+        </div>
+        <div>
+          <img class="header-picture" src="./img/homework_129983-ORUAFL-508.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="future">
+      <h2>Что меня ждет впереди</h2>
+      <div class="container">
+        <ul class="wrapper">
+          <li>
+            <div class="item item1">
+              <img src="./img/homework_icons8-time-machine-96.jpg" alt="pic" />
+              <h3>Свободное время</h3>
+              <p>
+                Мне нужно свободное время на семью и самое настоящее
+              </p>
             </div>
-
-        </section>
-    </header>
-    <main>
-        <section>
-            <h2>Что меня ждет впереди</h2>
-        </section>
-    </main>
-
-    <footer></footer>
-
+          </li>
+          <li>
+            <div class="item">
+              <img src="./img/homework_icons8-beach-96.jpg" alt="pic" />
+              <h3>Яркие путешествия</h3>
+              <p>
+                Работать откуда угодно - что может быть лучше?
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <img src="./img/homework_icons8-launch-96.jpg" alt="pic" />
+              <h3>Создание ценности</h3>
+              <p>
+                Нет ничего сильнее, чем жить не просто так, создавая ценность
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Форма заказа билета в будущее</h2>
+        <form action="#" class="contacts">
+          <ul>
+            <li><input type="text" name="name" placeholder="Имя" required /></li>
+            <li><input type="email" name="mail" id="" placeholder="e-mail" required /></li>
+            <li><input type="tel" name="phone" placeholder="Телефон" required /></li>
+            <li>
+              <input type="text" name="where" placeholder="Куда полетим" required />
+            </li>
+            <li><button type="submit" class="btn">Двигаться к мечте</button></li>
+          </ul>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      © Все мои мечты защищены моим трудолюбием
+  </footer>
+  </div>
 </body>
 
 </html>
