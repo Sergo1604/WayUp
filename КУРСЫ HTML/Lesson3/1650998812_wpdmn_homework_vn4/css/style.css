@@ -152,8 +152,10 @@ li {
 }
 
 .contacts {
-    margin-top: 60px;
-    margin-left: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
 }
 
 .contacts input {
@@ -162,12 +164,12 @@ li {
     font-size: 15px;
     padding: 16px 23px;
     margin-bottom: 16px;
-    
-} 
+}
 
 .contacts .btn {
     width: 340px;
 }
+
 
 footer {
     background-color: #164d7a;
@@ -175,6 +177,7 @@ footer {
     font-family: "Open sans";
     color: #ffffff;
     text-align: center;
-    padding: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin-top: 100px;
 }
