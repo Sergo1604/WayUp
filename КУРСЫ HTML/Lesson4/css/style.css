@@ -30,9 +30,6 @@ li {
 }
 
 .header {
-  padding-top: 60px;
-  padding-bottom: 150px;
-
   color: #ffffff;
   padding: 66px;
   background: rgba(78, 189, 254, 1);
@@ -95,6 +92,7 @@ li {
 
 
 .wrapper {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -136,16 +134,16 @@ li {
 }
 
 .contacts-input {
-background-color: #ecf2f8;
-padding-top: 105px;
-padding-bottom: 105px;
+  background-color: #ecf2f8;
+  padding-top: 105px;
+  padding-bottom: 105px;
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
-   padding-top: 60px; 
+  padding-top: 60px;
   /* margin-top: 60px; */
 }
 
@@ -169,4 +167,131 @@ footer {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+
+
+@media screen and (max-width:576px) {
+  .container {
+    width: 90%;
+  }
+
+  
+.dream {
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .header-picture {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .header .wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header h1, p {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  } 
+
+  .future .wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .future .item {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    width: 540px;
+  }
+
+  .header .wrapper {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .container {
+    width: auto;
+  }
+
+  .dream {
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .header-picture {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header .wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: aurto;
+  }
+
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .future .wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .future .item {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width:1060px) {
+  .container {
+    width: auto;
+  }
+
+  .dream {
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .header-picture {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header .wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: auto;
+  }
 }
